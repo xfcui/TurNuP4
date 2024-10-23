@@ -13,11 +13,13 @@ For all installations, we recommend using 'sklearn' 'scipy' 'torch' 'rdkit' 'bio
 
 ## data & model
 
-"www.bulabula.com"
+```
+  https://zenodo.org/records/13982490
+```
 
 ## Citation 
 
 Our work was first presented in the bibm for [Revolutionizing Enzyme Turnover Predictions with Non-Binary Reaction Fingerprints and AI]
 
-Index Terms—turnover number, differential reaction fingerprints (DRFPs), kinetically uncharacterized enzyme, pre-training,
+Index Terms—turnover number, differential reaction fingerprints (DRFPs), kinetically uncharacterized enzyme, pre-training,
 deep learning

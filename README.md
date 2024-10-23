@@ -1,4 +1,4 @@
-# TurNuP4 - turnover number (kcat) prediction--Quaternary
+# TurNuP4 - turnover number prediction--Quaternary
 
 ## Install
 
@@ -6,7 +6,8 @@ For all installations, we recommend using 'sklearn' 'scipy' 'torch' 'rdkit' 'bio
 
 ### for main.sh
 
-```chmod +x main.sh
+```
+  chmod +x main.sh
   ./main.sh
 ```
 

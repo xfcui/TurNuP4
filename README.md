@@ -7,8 +7,11 @@ For all installations, we recommend using 'sklearn' 'scipy' 'torch' 'rdkit' 'bio
 ### for main.sh
 
 ```
-  chmod +x main.sh
-  ./main.sh
+chmod +x setup.sh      
+./setup.sh             
+chmod +x main.sh       
+./main.sh              
+
 ```
 
 ## data & model

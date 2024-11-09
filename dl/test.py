@@ -38,16 +38,16 @@ def save_model(model, path):
 
 
 def print_sim_score(true,pred):
-    with open('./TurNuP4/data/sim_index/sim04_indices.pkl', 'rb') as f:
+    with open('./data/sim_index/sim04_indices.pkl', 'rb') as f:
         sim04_indices = pickle.load(f)
 
-    with open('./TurNuP4/data/sim_index/sim48_indices.pkl', 'rb') as f:
+    with open('./data/sim_index/sim48_indices.pkl', 'rb') as f:
         sim48_indices = pickle.load(f)
 
-    with open('./TurNuP4/data/sim_index/sim81_indices.pkl', 'rb') as f:
+    with open('./data/sim_index/sim81_indices.pkl', 'rb') as f:
         sim81_indices = pickle.load(f)
 
-    with open('./TurNuP4/data/sim_index/sim1_indices.pkl', 'rb') as f:
+    with open('./data/sim_index/sim1_indices.pkl', 'rb') as f:
         sim1_indices = pickle.load(f)
     
     true = np.array(true)
@@ -83,14 +83,14 @@ def print_sim_score(true,pred):
     # print("1 num:",len(sim1_indices))
 
 def print_sim_score3(true,pred):
-    with open('./TurNuP4/data/sim_index/sim03_indices.pkl', 'rb') as f:
+    with open('./data/sim_index/sim03_indices.pkl', 'rb') as f:
         sim04_indices = pickle.load(f)
 
-    with open('./TurNuP4/data/sim_index/sim36_indices.pkl', 'rb') as f:
+    with open('./data/sim_index/sim36_indices.pkl', 'rb') as f:
         sim48_indices = pickle.load(f)
 
 
-    with open('./TurNuP4/data/sim_index/sim1_indices.pkl', 'rb') as f:
+    with open('./data/sim_index/sim1_indices.pkl', 'rb') as f:
         sim1_indices = pickle.load(f)
     
     true = np.array(true)
@@ -279,9 +279,9 @@ if __name__ == "__main__":
     """Hyperparameters."""
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--datadir', type=str, default='./TurNuP4/data/', help='data文件夹位置')
-    parser.add_argument('--resultdir', type=str, default='./TurNuP4/result/', help='结果保存文件夹位置')
-    parser.add_argument('--modeldir', type=str, default='./TurNuP4/save_model/', help='模型和超参数文件夹位置')
+    parser.add_argument('--datadir', type=str, default='./data/', help='data文件夹位置')
+    parser.add_argument('--resultdir', type=str, default='./result/', help='结果保存文件夹位置')
+    parser.add_argument('--modeldir', type=str, default='./save_model/', help='模型和超参数文件夹位置')
     parser.add_argument('--para', type=str, default='1021', help='模型参数名称')
     parser.add_argument('--load_dict', default=True, help='是否载入模型参数')
     parser.add_argument('--save_name', default='0608_21', help='模型保存名字')

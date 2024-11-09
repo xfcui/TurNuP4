@@ -4,11 +4,11 @@
 # export PYTHONWARNINGS="ignore::DeprecationWarning"
 
 # 设置默认参数
-DATA_PRE_DIR="./kcat/TurNuP4/data_work/"
-ENCODE_DIR="./kcat/TurNuP4/AE/"
-MODEL_DIR="./kcat/TurNuP4/xgb/"
-DLMODEL_DIR="./kcat/TurNuP4/dl/"
-MIXMODEL_DIR="./kcat/TurNuP4/Mix_model/"
+DATA_PRE_DIR="./TurNuP4/data_work/"
+ENCODE_DIR="./TurNuP4/AE/"
+MODEL_DIR="./TurNuP4/xgb/"
+DLMODEL_DIR="./TurNuP4/dl/"
+MIXMODEL_DIR="./TurNuP4/Mix_model/"
 
 # 检查CUDA可用性
 if command -v nvidia-smi &> /dev/null; then

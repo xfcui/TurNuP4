@@ -131,16 +131,16 @@ def with_DRFP_esm1b_ts_mean(data_train,data_test,train_indices, test_indices,y_v
     
 
 def print_sim_score(true,pred):
-    with open('./kcat/TurNuP4/data/sim_index/sim04_indices.pkl', 'rb') as f:
+    with open('./TurNuP4/data/sim_index/sim04_indices.pkl', 'rb') as f:
         sim04_indices = pickle.load(f)
 
-    with open('./kcat/TurNuP4/data/sim_index/sim48_indices.pkl', 'rb') as f:
+    with open('./TurNuP4/data/sim_index/sim48_indices.pkl', 'rb') as f:
         sim48_indices = pickle.load(f)
 
-    with open('./kcat/TurNuP4/data/sim_index/sim81_indices.pkl', 'rb') as f:
+    with open('./TurNuP4/data/sim_index/sim81_indices.pkl', 'rb') as f:
         sim81_indices = pickle.load(f)
 
-    with open('./kcat/TurNuP4/data/sim_index/sim1_indices.pkl', 'rb') as f:
+    with open('./TurNuP4/data/sim_index/sim1_indices.pkl', 'rb') as f:
         sim1_indices = pickle.load(f)
     
     sim04_true = true[sim04_indices]
@@ -173,14 +173,14 @@ def print_sim_score(true,pred):
     # print("1 num:",len(sim1_indices))
     
 def print_sim_score3(true,pred):
-    with open('./kcat/TurNuP4/data/sim_index/sim03_indices.pkl', 'rb') as f:
+    with open('./TurNuP4/data/sim_index/sim03_indices.pkl', 'rb') as f:
         sim04_indices = pickle.load(f)
 
-    with open('./kcat/TurNuP4/data/sim_index/sim36_indices.pkl', 'rb') as f:
+    with open('./TurNuP4/data/sim_index/sim36_indices.pkl', 'rb') as f:
         sim48_indices = pickle.load(f)
 
 
-    with open('./kcat/TurNuP4/data/sim_index/sim1_indices.pkl', 'rb') as f:
+    with open('./TurNuP4/data/sim_index/sim1_indices.pkl', 'rb') as f:
         sim1_indices = pickle.load(f)
     
     print('\nPERFORMANCE ACROSS DIFFERENT SIMILARITY INTERVALS')
@@ -301,10 +301,10 @@ if __name__ == "__main__":
     """Hyperparameters."""
     
     # parser = argparse.ArgumentParser()
-    # parser.add_argument('--datadir', type=str, default='./kcat/TurNuP4/data/', help='data文件夹位置')#'../data/'
+    # parser.add_argument('--datadir', type=str, default='./TurNuP4/data/', help='data文件夹位置')#'../data/'
     # opt = parser.parse_args()
 
-    datadir = "./kcat/TurNuP4/data/"
+    datadir = "./TurNuP4/data/"
 
     """CPU or GPU."""
     if torch.cuda.is_available():

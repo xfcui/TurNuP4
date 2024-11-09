@@ -1,17 +1,15 @@
 # TurNuP4 - turnover number prediction--Quaternary
 
 ## Install
-
 For all installations, we recommend using 'sklearn' 'scipy' 'torch' 'rdkit' 'bioservices'.. dependencies:
-
-### for main.sh
-
 ```
 chmod +x setup.sh      
-./setup.sh             
+./setup.sh          
+```
+### for main.sh
+```        
 chmod +x main.sh       
 ./main.sh              
-
 ```
 
 ## data & model

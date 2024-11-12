@@ -2,15 +2,13 @@
 
 ## anaconda 环境
 ```
-  https://zenodo.org/records/14062069
-
-  download  turnup4env.tar.gz
-  将压缩包拷贝至Anaconda安装路径的envs路径下进行解压，并通过命令行激活该环境(conda activate turnup4env)
+  在您环境中
+chmod +x setup.sh       
+./setup.sh    
 ```
 
 ### for main.sh
-```        
-chmod +x main.sh       
+```            
 ./main.sh              
 ```
 

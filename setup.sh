@@ -3,7 +3,7 @@
 
 # 安装依赖
 
-pip install torch
+pip install torch == 2.3.1
 pip install numpy
 pip install tqdm
 pip install scikit-learn

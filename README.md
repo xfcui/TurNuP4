@@ -1,8 +1,8 @@
 # TurNuP4 - turnover number prediction--Quaternary
 
-## anaconda 环境
+## anaconda
 ```
-  在您环境中
+ 
 chmod +x setup.sh       
 ./setup.sh    
 ```
@@ -17,7 +17,22 @@ chmod +x setup.sh
 ```
   https://zenodo.org/records/13982490
 
-download  data/  encode/  save_model/  and work like :
+download  data/  encoder/  save_model/  and work like :
+
+--TurNuP4
+  --AE
+    --encoder
+  --analyzing
+  --data
+  --data_work
+  --dl
+  --result
+  --save_model
+  --xgb
+  --main.sh
+  --setup.sh
+
+
 ```
 ![image](https://github.com/user-attachments/assets/7c43df54-0e71-4abe-aa3f-8264d31765af)
 

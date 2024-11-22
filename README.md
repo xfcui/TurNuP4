@@ -34,7 +34,6 @@ download  data/  encoder/  save_model/  and work like :
 
 
 ```
-![image](https://github.com/user-attachments/assets/7c43df54-0e71-4abe-aa3f-8264d31765af)
 
 
 ## Citation 

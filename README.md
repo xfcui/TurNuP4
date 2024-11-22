@@ -19,21 +19,15 @@ chmod +x setup.sh
 
 download  data/  encoder/  save_model/  and work like :
 
---TurNuP4
-  --AE
-    --encoder
-  --analyzing
-  --data
-  --data_work
-  --dl
-  --result
-  --save_model
-  --xgb
-  --main.sh
-  --setup.sh
-
-
+.
+├── AE
+│   ├── encoder
+├── data
+├── save_model
+...
 ```
+
+
 
 
 ## Citation 

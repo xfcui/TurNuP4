@@ -1,29 +1,12 @@
 import os
 import pickle
-import hashlib
-import argparse
-import requests
 import numpy as np
 import sys
 import torch
-from rdkit import Chem
-from zeep import Client
-from os.path import join
-from rdkit.Chem import Crippen, AllChem
-from rdkit.Chem import Descriptors
-from urllib.request import urlopen, Request
 from bioservices import *
 import warnings
-import matplotlib.pyplot as plt
-import seaborn as sns
-from rdkit.Chem import Draw
-import pandas as pd
-import random
-from os.path import join                              
+import pandas as pd                     
 import os
-from rdkit import Chem
-from rdkit.Chem import AllChem
-from drfp import DrfpEncoder
 from sklearn.metrics import r2_score
 from scipy import stats
 import xgboost as xgb

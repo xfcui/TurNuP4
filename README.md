@@ -7,25 +7,33 @@ chmod +x setup.sh
 ./setup.sh    
 ```
 
-### for main.sh
-```            
-./main.sh              
-```
-
 ## data & model
 
 ```
   https://zenodo.org/records/13982490
 
-download  data/  encoder/  save_model/  and work like :
+download  data/  encoder/  save_model/  into the root folder of project and run the following commands
+unzip encoder.zip
+mv encoder AE
+unzip save_model.zip
+unzip data.zip
 
+finally it would be like :
 .
 ├── AE
 │   ├── encoder
 ├── data
 ├── save_model
 ...
+
 ```
+
+### for main.sh
+```            
+./main.sh              
+```
+
+
 
 
 

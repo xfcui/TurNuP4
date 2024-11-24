@@ -3,7 +3,7 @@
 ## anaconda
 ```
 conda creat -n turnup4 python=3.11.4
-activate turnup4
+conda activate turnup4
 
 chmod +x setup.sh       
 ./setup.sh    

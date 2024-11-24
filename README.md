@@ -31,7 +31,8 @@ finally it would be like :
 ```
 
 ### for main.sh
-```            
+```
+chmod +x main.sh 
 ./main.sh              
 ```
 

@@ -83,7 +83,7 @@ def print_sim_score3(true,pred):
     true = np.array(true)
     pred = np.array(pred)
     
-    print('PERFORMANCE ACROSS DIFFERENT SIMILARITY INTERVALS')
+    print('TABLE III：TurNuP4’s PERFORMANCE ACROSS DIFFERENT SIMILARITY INTERVALS')
     
     sim04_true = true[sim04_indices]
     sim04_pred = pred[sim04_indices]
@@ -205,7 +205,7 @@ def test_model(model, train_loader, val_loader, test_loader, optimizer, schedule
     
     true = list(y_true)
     best_pred = list(y_pred_avg)
-    
+    print('TurNuP4’s performance on test set')
     print(f'MSE: {val_mse}, R2: {val_r2}, Pearson: {val_pearson}')
     print('')
     
@@ -228,7 +228,7 @@ def test_model(model, train_loader, val_loader, test_loader, optimizer, schedule
     val_r2 = r2_score(y_true, y_pred_avg)
     val_pearson = np.round(stats.pearsonr(np.array(y_true), np.reshape(np.array(y_pred_avg), (-1)))[0], 4)
 
-    
+    print('TurNuP4’s performance on balance data in test set')
     print(f'MSE: {val_mse}, R2: {val_r2}, Pearson: {val_pearson}')
     print('')
     
@@ -250,7 +250,7 @@ def test_model(model, train_loader, val_loader, test_loader, optimizer, schedule
     val_pearson = np.round(stats.pearsonr(np.array(y_true), np.reshape(np.array(y_pred_avg), (-1)))[0], 4)
 
     
-    
+    print('TurNuP4’s performance on imbalance data in test set')
     print(f'MSE: {val_mse}, R2: {val_r2}, Pearson: {val_pearson}')
     print('\n')
 
@@ -305,8 +305,9 @@ if __name__ == "__main__":
     else:
         device = torch.device('cpu')
         print('CPU！！')
+        
 
-    print('主实验：')
+    print('TABLE I：TurNuP4’s PERFORMANCE')
     
     (mol_input_dim, prot_input_dim,batch_size, mol_embed_dim,prot_embed_dim, mlp_hidden_dim, output_dim) = map(int, [opt.mol_input_dim, opt.prot_input_dim,opt.batch_size, opt.mol_embed_dim,opt.prot_embed_dim, opt.mlp_hidden_dim, opt.output_dim])
     

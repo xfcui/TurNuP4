@@ -232,7 +232,8 @@ if __name__ == "__main__":
         device = torch.device('cpu')
         print('CPU！！')
         
-    print('table2 TurNuP_4(product_absent):')
+    print('TABLE II：TurNuP4’s ROBUSTNESS AGAINST PRODUCT MISSING')
+    print('which is TurNuP4’s performance on Product-Absent data')
 
 
     (mol_input_dim, prot_input_dim,batch_size, mol_embed_dim,prot_embed_dim, mlp_hidden_dim, output_dim) = map(int, [opt.mol_input_dim, opt.prot_input_dim,opt.batch_size, opt.mol_embed_dim,opt.prot_embed_dim, opt.mlp_hidden_dim, opt.output_dim])

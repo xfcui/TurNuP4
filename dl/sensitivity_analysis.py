@@ -376,10 +376,10 @@ if __name__ == "__main__":
     # print('测试集分析')
     # analysis_w(model,data_test)
     
-    print('平衡数据敏感度分析')
+    print('sensitivity analysis on balance data')
     analysis_w(model,data_test_balance)
     
-    print('不平衡数据敏感度分析')
+    print('sensitivity analysis on imbalance data')
     analysis_w(model,data_test_imbalance)
 
 

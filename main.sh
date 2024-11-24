@@ -33,8 +33,8 @@ fi
 
 # 调用其他脚本
 python "${DLMODEL_DIR}test.py"
-python "${DLMODEL_DIR}test_del.py"
 python "${MODEL_DIR}model_train.py" 1  
+python "${DLMODEL_DIR}test_del.py"
 python "${MODEL_DIR}model_train_imb.py" 1    
 python "${DLMODEL_DIR}sensitivity_analysis.py"
 

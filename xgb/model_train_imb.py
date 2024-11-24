@@ -295,7 +295,8 @@ if __name__ == "__main__":
     
 
     
-    print('TurNuP(product_absent):')
+    print('TABLE II：TurNuP’s ROBUSTNESS AGAINST PRODUCT MISSING')
+    print('which is TurNuP’s performance on Product-Absent data')
     with_DRFP_esm1b_ts_mean(data_train,data_test,train_indices, test_indices,y_valid_pred_DRFP,y_valid_pred_esm1b_ts,y_test_pred_drfp, y_test_pred_esm1b_ts)
     
 

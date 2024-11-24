@@ -78,6 +78,7 @@ def with_DRFP_esm1b_ts_mean(data_train,data_test,train_indices, test_indices,y_v
     R2_dif_fp_test = r2_score(np.reshape(test_Y, (-1)), y_test_pred)
     Pearson = stats.pearsonr(np.reshape(test_Y, (-1)), y_test_pred)
     # print(np.round(Pearson[0],3) ,np.round(MSE_dif_fp_test,3), np.round(R2_dif_fp_test,3))
+    print('TurNuP’s performance on test set')
     print('MSE: ',np.round(MSE_dif_fp_test,3),'R2: ', np.round(R2_dif_fp_test,3),'Pearson: ',np.round(Pearson[0],3) )
     # np.save(datadir+"training_results_1/y_test_pred_xgboost_ESM1b_ts_DRFP_mean.npy", y_test_pred)
     # np.save(datadir+"training_results_1/y_test_true_xgboost_ESM1b_ts_DRFP_mean.npy", test_Y)
@@ -98,6 +99,7 @@ def with_DRFP_esm1b_ts_mean(data_train,data_test,train_indices, test_indices,y_v
     R2_test = r2_score(np.reshape(test_Y_b, (-1)), y_test_pred_b)
     Pearson = stats.pearsonr(np.reshape(test_Y_b, (-1)), y_test_pred_b)
     # print(np.round(Pearson[0],3) ,np.round(MSE_test,3), np.round(R2_test,3))
+    print('TurNuP’s performance on balance data in test set')
     print('MSE: ',np.round(MSE_test,3),'R2: ', np.round(R2_test,3),'Pearson: ',np.round(Pearson[0],3) )
     
     
@@ -108,6 +110,7 @@ def with_DRFP_esm1b_ts_mean(data_train,data_test,train_indices, test_indices,y_v
     R2_test = r2_score(np.reshape(test_Y_imb, (-1)), y_test_pred_imb)
     Pearson = stats.pearsonr(np.reshape(test_Y_imb, (-1)), y_test_pred_imb)
     # print(np.round(Pearson[0],3) ,np.round(MSE_test,3), np.round(R2_test,3))
+    print('TurNuP’s performance on imbalance data in test set')
     print('MSE: ',np.round(MSE_test,3),'R2: ', np.round(R2_test,3),'Pearson: ',np.round(Pearson[0],3) )
     print_sim_score3(test_Y,y_test_pred)
     return y_test_pred
@@ -166,7 +169,8 @@ def print_sim_score3(true,pred):
     with open('./data/sim_index/sim1_indices.pkl', 'rb') as f:
         sim1_indices = pickle.load(f)
     
-    print('\nPERFORMANCE ACROSS DIFFERENT SIMILARITY INTERVALS')
+    print('')
+    print('TABLE III：TurNuP’s PERFORMANCE ACROSS DIFFERENT SIMILARITY INTERVALS')
     
     sim04_true = true[sim04_indices]
     sim04_pred = pred[sim04_indices]
@@ -346,7 +350,7 @@ if __name__ == "__main__":
     y_valid_pred_esm1b_ts, y_test_pred_esm1b_ts = with_esm1b_ts(data_train,data_test,train_indices, test_indices)
     
     
-    print('TurNuP:')
+    print('TABLE I：TurNuP’s PERFORMANCE')
     with_DRFP_esm1b_ts_mean(data_train,data_test,train_indices, test_indices,y_valid_pred_DRFP,y_valid_pred_esm1b_ts,y_test_pred_drfp, y_test_pred_esm1b_ts)
     
     
